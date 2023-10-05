@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html style=" height: 100%; margin: 0;">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floris Guldenaar Portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="scroll.js"></script>
+  <script src="projects.js"></script>
+  <script src="contactslide.js"></script>
+  </head>
+  
+
+
+  <header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="z-index: 2; left: 1;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+
+        </button>
+        <ul class="nav justify-content-end navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active contact" id="contactButton" onclick="openContact()">Contact</a>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+<body>
+
+  <video id="parallaxbg" src="images/Background-video.mp4" autoplay loop playsinline muted></video>
+  <section class="header" >
+
+      
+    <div class="headertextname text-nowrap font-weight-bold text-uppercase row" id="headertextH1">
+        <h1 id="font-H1">Floris Guldenaar</h1>
+      </div>
+      <div class="headertext text-nowrap font-weight-bold text-uppercase row" id="headertext">
+      <div id="headertextP">
+        <p>Level Design</p>
+        <p>Game Development</p>
+        <p>Web Development</p>
+        
+      </div>
+    </div>
+  </section>
+  
+<div class="smooth-scroll-wrapper">
+
+  <div id="main">
+    <div class="block-about-container">
+        <section>
+          <div class="container col px-4" style="text-align: unset; z-index: 1;">
+            
+            <div class="row flex-lg-row-reverse align-items-center">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <div>
+                  <img src="images/cvportrait2.png" alt="">
+                </div>
+              </div>
+            </div>
+              <div class="col-lg-6 text-area">
+                <h1 class="display-5 fw-bold lh-1 mb-3">About me</h1>
+                <p class="lead">Hello there! <br> My name is <span style="font-weight: bold; font-style: italic;"> Floris Guldenaar.</span> I'm a software developer from the Netherlands, with experience in <span style="font-weight: bold;"> Web</span> & <span style="font-weight: bold;"> Game</span> Design. When I was younger I was always experimenting with the Source Engine and created little 3D levels and environments, Later I moved on to Unreal Engine and Unity.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+      <div class="block-container">
+
+
+        <section class="block">
+
+          <button onclick="openInfo(0)" class="container col px-4 py-5" style="text-align: unset;">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="images/projects/ot/ot_thumbnail.png" class="d-block mx-lg-auto img-fluid" width="400" height="400" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3 text-white">ONTIME: Unity VR game.</h1>
+                <p class="lead text-white">I created this VR Project as a school project. The premis is to complete every level in the fastest amount of time possible.</p>
+                <h2>2022</h2>
+              </div>
+            </div>
+          </button>
+        </section>
+        <div class="projects-divider-mini"></div>
+
+        <section class="block">
+
+          <button onclick="openInfo(1)" class="container col px-4 py-5" style="text-align: unset;">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <div class="skew">
+                  <img src="images/projects/ul/ul_thumbnail.jpg" class="d-block mx-lg-auto img-fluid" width="400" height="400" loading="lazy">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3 text-white">Unreal Landscape</h1>
+                <p class="lead text-white">I created a forest environment in Unreal Engine 4. I created this project because I wanted to create a forest environment.</p>
+                <h2>2019</h2>
+              </div>
+            </div>
+          </button>
+        </section>
+        <div class="projects-divider-mini"></div>
+        <section class="block">
+
+          <button onclick="openInfo(2)" class="container col px-4 py-5" style="text-align: unset;">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="images/projects/jj/JJ-thumbnail.png" class="d-block mx-lg-auto img-fluid" width="400" height="400" loading="lazy" style="filter: brightness(80%);">
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3 text-white">Jungle Jam</h1>
+                <p class="lead text-white">An Unity 2D Game project. The project was created for an arcade machine located at my school, You can use a joystick and A and B buttons to interact with the game.</p>
+                <h2>2021</h2>
+              </div>
+            </div>
+          </button>
+          
+
+          
+        </section>
+        <div class="projects-divider-mini"></div>
+        <section class="block">
+
+          <button onclick="openInfo(3)" class="container col px-4 py-5" style="text-align: unset;">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="images/projects/li/li-thumbnail.jpg" class="d-block mx-lg-auto img-fluid" width="400" height="400" loading="lazy" style="filter: brightness(80%);">
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3 text-white">Lost Industry 2</h1>
+                <p class="lead text-white">A <span style="font-weight: bold;">Half-life 2: Mod</span>. This project was made by an online team where i joined in to help with the level design.</p>
+                <h2>2018 - 2020</h2>
+              </div>
+            </div>
+          </button>
+          
+
+          
+        </section>
+        <div class="projects-divider-mini"></div>
+        <section class="block">
+
+          <button onclick="openInfo(4)" class="container col px-4 py-5" style="text-align: unset;">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="images/projects/wi17/wi17_thumbnail.jpg" class="d-block mx-lg-auto img-fluid" width="400" height="400" loading="lazy" style="filter: brightness(80%);">
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3 text-white">War in 17</h1>
+                <p class="lead text-white">A <span style="font-weight: bold;">Half-life 2: Mod</span> Made entirely by me. Although it was not finished it was quite an experience to build city's designed for gameplay.</p>
+                <h2>2019 - 2021</h2>
+              </div>
+            </div>
+          </button>
+          
+
+          
+        </section>
+<!-- Projects Full Image-->
+        <div class="img-overlay" onclick="closeImgOverlay()" id="imgOverlay">
+          <img src="images/temp.png" alt="Image Fullscreen" id="imgOverlayImage" >
+          <div class="img-full-overlay-text">
+            <h1 id="imgOverlayTitle">TITLE</h1>
+            <p id="imgOverlayText">TEXT</p>
+          </div>
+        </div>
+<!-- Projects Full Image BeforeAfter-->
+      <div class="img-overlay" onclick="closeImgOverlayBA()" id="imgOverlayBA">
+        <div id="cf" id="imgOverlayImageBA">
+          <img class="bottom" src="temp.png" id="imgOverlayImageAfter" />
+          <img class="top" src="temp2.png" id="imgOverlayImageBefore" />
+        </div>
+        
+        <div class="img-full-overlay-text">
+          <h3>Hover over the image.</h3>
+          <h1 id="imgOverlayTitleBA">TITLE</h1>
+          <p id="imgOverlayTextBA">TEXT</p>
+        </div>
+      </div>
+
+      </div>
+
+<!-- Project Content 0-->
+
+        <div id="pjctInfo0" class="project-overlay">
+          <div class="exitbutton">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeInfo(0)">&times;</a>
+        </div>
+              <div class="project-info row">
+                <div class="container row flex-lg-row-reverse ">
+                  <div class="col-10 col-sm-8 col-lg-6 ">
+                    <div class="d-flex" style="height: 100%;">
+                      <div class="vr"></div>
+
+                  </div>
+
+
+                   <div class="image">
+                    <section class="imageCollage">
+
+                      <iframe width="560" height="270" src="https://www.youtube.com/embed/X60kfBFg-2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen titleText="Gameplay and movement showcase" text="This is a video showing the premis of the game. the game is in a very early prototype state." onmouseover="selectText(this)"></iframe>
+
+
+                      </div>     
+                                      
+                    </section>
+                                        </div>
+
+                  <div class="col-lg-6">
+                    
+                    <h1 class="display-5 fw-bold lh-1 mb-3 text-white">ONTIME: Unity VR game.</h1>
+                    <p class="lead text-white">I created this VR Project as a school project. The premis is to complete every level in the fastest amount of time possible, if the timer runs out of time the level resets. Along the way you have to avoid obstacles. The main focus of this project was to create a working game with special kind of movement because i always thought the teleporting was a bit boring. Good assests were not the main focus.</p>
+                    <div class="img-text">
+                      <h1 id="imgOverlayTitleMain0">Hover over an image.</h1>
+                      <p id="imgOverlayTextMain0">To see information</p>
+                    </div>
+                    <div class="bottom">
+                      <h1>YEAR:</h1>
+                    <p>2022 - 2022</p>
+                    <h3> &nbsp;|&nbsp; </h3>
+                    <h1>ROLE:</h1>
+                    <p> Code</p>
+                    <h3> &nbsp;|&nbsp; </h3>
+                    <h1>ENGINE:</h1>
+                    <p> Unity VR</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+
+        
+<!-- Project Content END -->
+        
+<!-- Project Content 1-->
+
+<div id="pjctInfo" class="project-overlay">
+  <div class="exitbutton">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeInfo(1)">&times;</a>
+</div>
+      <div class="project-info row">
+        <div class="container row flex-lg-row-reverse ">
+          <div class="col-10 col-sm-8 col-lg-6 ">
+            <div class="d-flex" style="height: 100%;">
+              <div class="vr"></div>
+
+          </div>
+
+
+           <div class="image">
+            <section class="imageCollage">
+
+              <iframe width="560" height="270" src="https://www.youtube.com/embed/JNh3UIOmroI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen titleText="Unreal Landscape Final Product" text="This is the finished version of the map" onmouseover="selectText(this)"></iframe>
+
+                <iframe width="560" height="270" src="https://www.youtube.com/embed/UjlCzWNj_W0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen titleText="Unreal Landscape SpeedBuild" text="This is the &quot;Making of&quot; of the project in the form a speedbuild." onmouseover="selectText(this)"></iframe>
+
+
+
+
+
+
+                                   
+
+              </div>     
+                              
+            </section>
+                                </div>
+
+          <div class="col-lg-6">
+            
+            <h1 class="display-5 fw-bold lh-1 mb-3 text-white">Unreal Landscape</h1>
+            <p class="lead text-white">I created a forest environment in Unreal Engine 4. I created this project because I wanted to create an environment using pre-made assests from the Unreal Engine store.</p>
+            <div class="img-text">
+              <h1 id="imgOverlayTitleMain">Hover over an image.</h1>
+              <p id="imgOverlayTextMain">To see information</p>
+            </div>
+            <div class="bottom">
+              <h1>YEAR:</h1>
+            <p>2019 - 2019</p>
+            <h3> &nbsp;|&nbsp; </h3>
+            <h1>ROLE:</h1>
+            <p> Level Design</p>
+            <h3> &nbsp;|&nbsp; </h3>
+            <h1>ENGINE:</h1>
+            <p> Unreal Engine 4</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+<!-- Project Content END -->
+
+<!-- Project Content 2-->
+        <div id="pjctInfo2" class="project-overlay">
+          <div class="exitbutton">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeInfo(2)">&times;</a>
+        </div>
+              <div class="project-info row">
+                <div class="container row flex-lg-row-reverse ">
+                  <div class="col-10 col-sm-8 col-lg-6 ">
+                    <div class="d-flex" style="height: 100%;">
+                      <div class="vr"></div>
+
+                  </div>
+
+                  <div class="image">
+                    <section class="imageCollage">
+                      <div class="image-info">
+                        <img class="colImage" titleText="Scoreboard System" text="At the end of every minigame the screenfades to black and the scoreboard popsup and counting your newly gotten scores to your overal score" src="images/projects/jj/jj-sb.gif" alt="Picture 1"  title="Fullscreen"onclick="openImgOverlay(), selectImage(this), selectText(this)" onmouseover="selectText(this)">
+                        <p>Click for Fullscreen</p>
+                      </div>
+                      <div class="image-info">
+                        <img class="colImage" titleText="Random Minigame 1" text="In this minigame you can push the banana up & down by spamming A and B, The red bar drops down and the faster you spam the faster it goes op. After every round the bar drops down faster. I programmed the whole minigame." src="images/projects/jj/jj-minigame1.gif" alt="Picture 1"  title="Fullscreen"onclick="openImgOverlay(), selectImage(this), selectText(this)" onmouseover="selectText(this)">
+                        <p>Click for Fullscreen</p>
+                      </div>
+                      <div class="image-info">
+                        <img class="colImage" titleText="Winner Screen" text="Winner screen that shows the player that won and what his final score and heath is. The animations are made with Unity Animations." src="images/projects/jj/jj-endscreen.gif" alt="Picture 1"  title="Fullscreen"onclick="openImgOverlay(), selectImage(this), selectText(this)" onmouseover="selectText(this)">
+                        <p>Click for Fullscreen</p>
+                      </div>
+                      <div class="image-info">
+                        <img class="colImage" titleText="End Scoreboard System" text="This is the end scoreboard it adds all your gotten scores together and subtracts your score value to the health value of your opponent. This way your goal is to end with the most health AND highest score." src="images/projects/jj/jj-scorebaord.gif" alt="Picture 1"  title="Fullscreen"onclick="openImgOverlay(), selectImage(this), selectText(this)" onmouseover="selectText(this)">
+                        <p>Click for Fullscreen</p>
+                      </div>
+
+
+
+                      </div>     
+                                      
+                    </section>
+                                        </div>
+
+                  <div class="col-lg-6">
+                    
+                    <h1 class="display-5 fw-bold lh-1 mb-3 text-white">Jungle Jam</h1>
+                    <p class="lead text-white">An Unity 2D Game project. The project was created for an arcade machine located at my school, You can use a joystick and A and B buttons to interact with the game. The premise was to recreate a comptitive arcade game feel by making 2 players play against each other in a set of 3 random selected minigames.  
+                      
+                      <br> <span style="font-weight: bold; font-size: 1.5em;">Programmed:</span>
+                      <ul style="margin-top: -25px;">
+                        <li>Scoreboard</li>
+                        <li>Minigames</li>
+                        <li>Winner Screen</li>
+                        <li>Healthbar</li>
+                      </ul>
+                    </p>
+                    <div class="img-text">
+                      <h1 id="imgOverlayTitleMain2">Hover over an image.</h1>
+                      <p id="imgOverlayTextMain2">To see information</p>
+                    </div>
+                    <div class="bottom">
+                      <h1>YEAR:</h1>
+                    <p>2021 - 2021</p>
+                    <h3> &nbsp;|&nbsp; </h3>
+                    <h1>ROLE:</h1>
+                    <p> Code</p>
+                    <h3> &nbsp;|&nbsp; </h3>
+                    <h1>CODE:</h1>
+                    <p> C#</p>
+                    <h3> &nbsp;|&nbsp; </h3>
+                    <h1>ENGINE:</h1>
+                    <p> Unity</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+<!-- Project Content End-->
+
+
+
+<!-- Project Content 3-->
+
+<div id="pjctInfo3" class="project-overlay">
+  <div class="exitbutton">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeInfo(3)">&times;</a>
+</div>
+      <div class="project-info row">
+        <div class="container row flex-lg-row-reverse ">
+          <div class="col-10 col-sm-8 col-lg-6 ">
+            <div class="d-flex" style="height: 100%;">
+              <div class="vr"></div>
+
+          </div>
+
+
+           <div class="image">
+            <section class="imageCollage">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/POrkkLj5cZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+              <div class="image-info">
+                <img class="colImage" titleText="Level Design: Redesign 1" text="I had to redesign an industrial warehouse. I was given a basic blockout of the warehouse with simple textures as a refrence and I had the freedom to redesign the area the make it look better. I redid te lighting and added more metal beams and fences for more detail to the map." src="images/projects/li/li_BA1_thumbnail.jpg" alt="Picture 1"  title="Fullscreen"onclick="openImgOverlayBA(), selectImage(this), selectText(this), bAImage(1)" onmouseover="selectText(this)">
+                <p>Click for Before & After</p>
+              </div>
+              <div class="image-info">
+                <img class="colImage" titleText="Level Design: Redesign 2" text="I had to redesign an industrial warehouse. I was given a basic blockout of the warehouse with simple textures as a refrence and I had the freedom to redesign the area the make it look better. I redid te lighting and added more metal beams and fences for more detail to the map." src="images/projects/li/li_BA2_thumbnail.jpg" alt="Picture 1"  title="Fullscreen"onclick="openImgOverlayBA(), selectImage(this), selectText(this), bAImage(2)" onmouseover="selectText(this)">
+                <p>Click for Before & After</p>
+              </div>
+
+
+
+
+
+                                   
+
+              </div>     
+                              
+            </section>
+                                </div>
+
+          <div class="col-lg-6">
+            
+            <h1 class="display-5 fw-bold lh-1 mb-3 text-white">Lost Industry 2</h1>
+            <p class="lead text-white">Lost Industry 2 is a <span style="font-weight: bold;">Half-life 2: Mod</span>. It was made in the Source Engine which is a brush based engine, which made it easy for me to build environments without spending all the time modelling assests. My job on this project was to redesign levels (relight, add assets, make more appealing) and even come up with new levels.</p>
+            <p class="lead text-white" >Click <span style="font-weight: bold;" class="text-pointer" onclick="window.open('https://www.moddb.com/mods/lostindustry2-mod')">HERE</span> to view mods page.</p>
+          
+            <div class="img-text">
+              <h1 id="imgOverlayTitleMain3">Hover over an image.</h1>
+              <p id="imgOverlayTextMain3">To see information</p>
+            </div>
+            <div class="bottom">
+              <h1>YEAR:</h1>
+            <p>2018 - 2020</p>
+            <h3> &nbsp;|&nbsp; </h3>
+            <h1>ROLE:</h1>
+            <p> Level Design</p>
+            <h3> &nbsp;|&nbsp; </h3>
+            <h1>ENGINE:</h1>
+            <p> Source Engine</p>
+            <h3> &nbsp;|&nbsp; </h3>
+            <h1>Software:</h1>
+            <p> Hammer sdk</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+<!-- Project Content END -->
+
+<!-- Project Content 4-->
+
+<div id="pjctInfo4" class="project-overlay">
+  <div class="exitbutton">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeInfo(4)">&times;</a>
+</div>
+      <div class="project-info row">
+        <div class="container row flex-lg-row-reverse ">
+          <div class="col-10 col-sm-8 col-lg-6 ">
+            <div class="d-flex" style="height: 100%;">
+              <div class="vr"></div>
+
+          </div>
+
+
+           <div class="image">
+            <section class="imageCollage">
+              <div class="image-info">
+                <img class="colImage" titleText="Street 1" text="This is the road uphill before a level load to the next map.. Camera faces towards the canals." src="images/projects/wi17/Map1_Steet1.jpg" alt="Picture 1"  title="Fullscreen"onclick="openImgOverlay(), selectImage(this), selectText(this)" onmouseover="selectText(this)">
+                <p>Click for Fullscreen</p>
+              </div>
+              <div class="image-info">
+                <img class="colImage" titleText="Ducking space" text="In this part of the level you have to duck for a sniper" src="images/projects/wi17/Map1_Steet2.jpg" alt="Picture 1"  title="Fullscreen"onclick="openImgOverlay(), selectImage(this), selectText(this)" onmouseover="selectText(this)">
+                <p>Click for Fullscreen</p>
+              </div>
+              <div class="image-info">
+                <img class="colImage" titleText="Sniper yard" text="This is the whole section of the sinper yard" src="images/projects/wi17/Map1_Steet3.jpg" alt="Picture 1"  title="Fullscreen"onclick="openImgOverlay(), selectImage(this), selectText(this)" onmouseover="selectText(this)">
+                <p>Click for Fullscreen</p>
+              </div>
+              <div class="image-info">
+                <img class="colImage" titleText="Spawn attic" text="This attic was suppost to be the start of the mod." src="images/projects/wi17/Map1_Attic1.jpg" alt="Picture 1"  title="Fullscreen"onclick="openImgOverlay(), selectImage(this), selectText(this)" onmouseover="selectText(this)">
+                <p>Click for Fullscreen</p>
+              </div>
+              <div class="image-info">
+                <img class="colImage" titleText="Level Blockout" text="Before I started to add detail I made a blockout of the map so I could understand the proportions of the level and how long it would take for the player to walk from A to B" src="images/projects/wi17/Map1_dev1.jpg" alt="Picture 1"  title="Fullscreen"onclick="openImgOverlayBA(), selectImage(this), selectText(this), bAImage(3)" onmouseover="selectText(this)">
+                <p>Click for Before & After</p>
+              </div>
+
+
+
+                                   
+
+              </div>     
+                              
+            </section>
+                                </div>
+
+          <div class="col-lg-6">
+            
+            <h1 class="display-5 fw-bold lh-1 mb-3 text-white">War in 17</h1>
+            <p class="lead text-white">Half-life 2: Mod</span> Made entirely by me. Although it was not finished it was quite an experience to build cities designed for gameplay.. The mod was supposed to be focused on fighting in the streets against enemies and seeing the city start to deteriorate the more you play. Before I went and made a map I started with a block out of the map with development textures and added details later.</p>
+            <div class="img-text">
+              <h1 id="imgOverlayTitleMain4">Hover over an image.</h1>
+              <p id="imgOverlayTextMain4">To see information</p>
+            </div>
+            <div class="bottom">
+              <h1>YEAR:</h1>
+            <p>2019 - 2021</p>
+            <h3> &nbsp;|&nbsp; </h3>
+            <h1>ROLE:</h1>
+            <p> Level Design</p>
+            <h3> &nbsp;|&nbsp; </h3>
+            <h1>ENGINE:</h1>
+            <p> Source Engine</p>
+            <h3> &nbsp;|&nbsp; </h3>
+            <h1>Software:</h1>
+            <p> Hammer sdk</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+<!-- Project Content END -->
+      </section>
+     
+     
+      <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+          <span class="text-muted">Floris Guldenaar Portfolio</span>
+                  
+        <div class="footer-icon justify-content-end">
+          <img src="images/linkedinIcon.png" alt="Linkedin" class="contact-icon" onclick=" window.open('https://www.linkedin.com/in/floris-guldenaar-aa958723a/','_blank')">
+        </div>
+        </div>
+
+      </footer>
+
+    </div>
+
+
+  
+
+  <div id="aboutmeOverlay" class="aboutme">
+    
+    <div class="amContent">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeContact()">&#5130;</a>
+      <div class="amtext">
+        <h1 id="slideContent1">Contact.</h1>
+        <p id="slideContent2">Contact me below.</p>
+          <p id="slideContent3">If you're interested in my work or you have questions you can always contact me below, feel to free ask questions!</p>
+        <a id="slideContent4" href="mailto:florisguldenaar5@email.com">Mail</a>
+
+              <div class="row con-icons justify-content-center">
+                <img src="images/linkedinIcon.png" alt="Linkedin" id="slideContentIcon3" class="contact-icon" onclick=" window.open('https://www.linkedin.com/in/floris-guldenaar-aa958723a/','_blank')">
+              </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+</div>
+</body>
+
+
+
+</html>
+<div> 
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookie Consent Banner</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="cookiePopup" class="hide">
+      <p style="font-size: large;">&#127850;</p>
+      <p>
+        Our website uses cookies to provide your browsing experience and
+        relevant information. Before continuing to use our website, you agree &
+        accept of our <a href="cookie.html">Cookie Policy & Privacy.</a>
+      </p>
+      <button id="acceptCookie">Accept</button>
+    </div>
+    <!-- Script -->
+    <script src="cookie.js"></script>
+  </body>
+</div>
